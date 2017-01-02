@@ -3,8 +3,8 @@ import { RouterModule, Route }  from '@angular/router';
 
 
 @Component({
-  selector: 'print-component',
-  template: `<div>Print</div>`
+  selector: 'event-component',
+  template: `<div>event definition here</div>`
 })
 
 export class EventComponent { }

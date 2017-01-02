@@ -4,17 +4,27 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import {routing} from "./app.routes";
+import { RouterModule }  from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { MapComponent, MapRoutes } from './mapcomponent/map.component';
+import { EventComponent, EventRoutes } from './eventcomponent/eventmain.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent, EventComponent, MapComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    RouterModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
